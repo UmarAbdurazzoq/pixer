@@ -196,6 +196,7 @@ body {
     font-size: 30px;
     line-height: 130%;
     color: #000000;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 
@@ -239,4 +240,5 @@ iframe {
     border: none;
     width: 458px;
     height: 258px;
+    border-radius: 5px;
 }
