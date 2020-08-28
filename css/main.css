@@ -17,13 +17,13 @@
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
@@ -33,14 +33,14 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -71,7 +71,7 @@ body {
     text-decoration: none;
     color: #222;
     padding: 16px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .logo {
@@ -85,6 +85,7 @@ body {
 }
 
 .call-center {
+    white-space: nowrap;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -157,6 +158,10 @@ body {
 }
 
 .nav-link:hover {
+    box-shadow: inset 0px -3px 0px black;
+}
+
+.has-menu-services:hover .nav-link {
     box-shadow: inset 0px -3px 0px black;
 }
 
