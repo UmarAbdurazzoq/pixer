@@ -29,6 +29,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    margin-top: 51px;
     font-family: 'Product Sans', 'Arial', sans-serif;
 }
 
@@ -50,6 +51,7 @@ body {
     margin-right: auto;
 }
 .site-header {
+    top: 0;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -93,7 +95,7 @@ body {
     background-color: #00bafc;
     border-radius: 5px;
     border: 3px solid #00bafc;
-    transition: opacity, background-color 0.3s ease ;
+    transition: opacity, background-color, background-color 0.4s ease ;
 }
 
 .logo:hover {
@@ -142,6 +144,10 @@ body {
     margin-bottom: 7px;
 }
 
+.services-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 .services-link:hover {
     color: white;
@@ -164,7 +170,9 @@ body {
 .has-menu-services:hover .nav-link {
     box-shadow: inset 0px -3px 0px black;
 }
-
+.has-menu-services:active .nav-link {
+    box-shadow: none;
+}
 .nav-link:active {
     color: #fff;
     box-shadow: none;
@@ -174,11 +182,62 @@ body {
 .call-center:hover {
     background: none;
     color: #00bafc;
-    box-shadow: inset 3px ;
 }
 
 .call-center:active {
     color: white;
     background-color: #00bafc;
     opacity: 0.4;
+}
+
+/* Intro box */
+
+.intro-heading {
+    width: 434px;
+    font-size: 30px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.intro-text {
+    width: 465px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.intro-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #00BAFC;
+    border-radius: 5px;
+    padding: 8px 16px;
+    line-height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.intro-link:hover {
+    opacity: 0.8;
+}
+
+.intro-link:active {
+    opacity: 0.6;
+}
+
+.intro-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.intro-box {
+    margin-right: auto;
+}
+
+iframe {
+    border: none;
+    width: 458px;
+    height: 258px;
 }
