@@ -18,6 +18,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -244,9 +245,166 @@ body {
     height: 258px;
     border-radius: 5px;
 }
-.text-wrapper {
-    padding: 55px 0;
-    margin: 0 auto;
-    width: 720px;
+
+.section-heading-wrapper {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    width: 719px;
+}
+
+.section-heading {
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.section-text {
+    line-height: 24px;
+}
+
+.services-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 24px;
+    margin-left: -35px;
+    margin-right: -35px;
+    list-style-type: none;
+    list-style-type: none;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 48px;
+}
+
+.services-menu-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    padding: 24px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.services-menu-link:hover {
+    box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+
+.services-menu-link:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.services-menu-link::before {
+    display: block;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: "";
+}
+
+.service-name {
+    color: black;
+    text-align: center;
+}
+
+.services-text {
+    color: black;
+    text-align: center;
+}
+
+.telegram-bot .services-menu-link::before  {
+    background-image: url('../img/bot-illustration.png');
+}
+
+.smm .services-menu-link::before  {
+    background-image: url('../img/smm-illustration.png');
+}
+
+.design .services-menu-link::before  {
+    background-image: url('../img/design-illustration.png');
+}
+
+.crm .services-menu-link::before  {
+    background-image: url('../img/crm-illustration.png');
+}
+
+.vebsite .services-menu-link::before {
+    background-image: url("../img/website-illustration.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    .service-website .service-link::before {
+        background-image: url("../img/website-illustration@2x.png");
+    }
+
+    .service-telegram-bot .service-link::before {
+        background-image: url("../img/bot-illustration@2x.png");
+    }
+
+    .service-smm .service-link::before {
+        background-image: url("../img/smm-illustration@2x.png");
+    }
+
+    .service-graphic-design .service-link::before {
+        background-image: url("../img/design-illustration@2x.png");
+    }
+
+    .service-crm .service-link::before {
+        background-image: url("../img/crm-illustration@2x.png");
+    }
+
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-link {
+    padding: 8px 16px;
+    background-color: #00BAFC;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s ease;
+    margin-right: 10px;
+}
+
+.order-link:hover {
+    opacity: 0.8;
+}
+
+.order-link:active {
+    opacity: 0.6;
+}
+
+.services-page {
+    line-height: 24px;
+    text-align: center;
+    color: #00BAFC;
+}
+
+.services-menu {
+    padding-bottom: 50px;
 }
