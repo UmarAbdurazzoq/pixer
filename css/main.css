@@ -235,7 +235,7 @@ body {
     margin-right: auto;
 }
 
-iframe {
+.intro-iframe {
     border: none;
     width: 458px;
     height: 258px;
