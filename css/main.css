@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Product Sans';
     src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
-    url('../fonts/ProductSans-Regular.woff') format('woff');
+        url('../fonts/ProductSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'Product Sans';
     src: url('../fonts/') format('woff2'),
-    url('../fonts/ProductSans-Bold.woff') format('woff');
+        url('../fonts/ProductSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -51,6 +51,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .site-header {
     top: 0;
     position: fixed;
@@ -96,7 +97,7 @@ body {
     background-color: #00bafc;
     border-radius: 5px;
     border: 3px solid #00bafc;
-    transition: opacity, background-color, background-color 0.4s ease ;
+    transition: opacity, background-color, background-color 0.4s ease;
 }
 
 .logo:hover {
@@ -134,11 +135,11 @@ body {
     white-space: nowrap;
 }
 
-.services-item:first-child{
+.services-item:first-child {
     margin-top: 7px;
 }
 
-.services-item:last-child{
+.services-item:last-child {
     margin-bottom: 7px;
 }
 
@@ -168,9 +169,11 @@ body {
 .has-menu-services:hover .nav-link {
     box-shadow: inset 0px -3px 0px black;
 }
+
 .has-menu-services:active .nav-link {
     box-shadow: none;
 }
+
 .nav-link:active {
     color: #fff;
     box-shadow: none;
@@ -323,19 +326,19 @@ body {
     text-align: center;
 }
 
-.telegram-bot .services-menu-link::before  {
+.telegram-bot .services-menu-link::before {
     background-image: url('../img/bot-illustration.png');
 }
 
-.smm .services-menu-link::before  {
+.smm .services-menu-link::before {
     background-image: url('../img/smm-illustration.png');
 }
 
-.design .services-menu-link::before  {
+.design .services-menu-link::before {
     background-image: url('../img/design-illustration.png');
 }
 
-.crm .services-menu-link::before  {
+.crm .services-menu-link::before {
     background-image: url('../img/crm-illustration.png');
 }
 
@@ -343,13 +346,12 @@ body {
     background-image: url("../img/website-illustration.png");
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 
     .service-website .service-link::before {
         background-image: url("../img/website-illustration@2x.png");
@@ -371,6 +373,25 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url("../img/crm-illustration@2x.png");
     }
 
+    .zero-step::before {
+        background-image: url("../img/step-illlustration@2x.png");
+    }
+
+    .first-step::before {
+        background-image: url("../img/step-illllustration@2x.png");
+    }
+
+    .second-step::before {
+        background-image: url("../img/step-illustration@2x.png");
+    }
+
+    .third-step::before {
+        background-image: url("../img/step-illustration2@2x.png");
+    }
+
+    .fourth-step::before {
+        background-image: url("../img/step-illustration3@2x.png");
+    }
 }
 
 .links-wrapper {
@@ -386,7 +407,7 @@ only screen and (                min-resolution: 2dppx) {
     text-decoration: none;
     color: white;
     transition: opacity 0.3s ease;
-    margin-right: 10px;
+
 }
 
 .order-link:hover {
@@ -401,8 +422,82 @@ only screen and (                min-resolution: 2dppx) {
     line-height: 24px;
     text-align: center;
     color: #00BAFC;
+    margin-left: 10px;
 }
 
 .services-menu {
     padding-bottom: 50px;
+}
+
+.work-steps {
+    margin: 0;
+    padding: 0;
+    padding: 20px 200px;
+}
+
+.step-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.zero-step::before {
+    margin-right: 35px;
+    display: inline-block;
+    width: 300px;
+    height: 277px;
+    background-image: url(../img/step-illlustration.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.first-step::after {
+    margin-left: 35px;
+    display: inline-block;
+    width: 300px;
+    height: 277px;
+    background-image: url(../img/step-illllustration.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.second-step::before {
+    margin-right: 35px;
+    display: inline-block;
+    width: 300px;
+    height: 277px;
+    background-image: url(../img/step-illustration.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.third-step::after {
+    margin-left: 35px;
+    display: inline-block;
+    width: 300px;
+    height: 277px;
+    background-image: url(../img/step-illustration2.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.fourth-step::before {
+    margin-right: 35px;
+    display: inline-block;
+    width: 300px;
+    height: 277px;
+    background-image: url(../img/step-illustration3.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
 }
