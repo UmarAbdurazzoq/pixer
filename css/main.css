@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Product Sans';
     src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
-        url('../fonts/ProductSans-Regular.woff') format('woff');
+    url('../fonts/ProductSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'Product Sans';
     src: url('../fonts/') format('woff2'),
-        url('../fonts/ProductSans-Bold.woff') format('woff');
+    url('../fonts/ProductSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -50,6 +50,11 @@ body {
     padding: 0 24px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.order-link, .order-link-footer {
+    border: none;
+    outline: none;
 }
 
 .site-header {
@@ -500,4 +505,141 @@ only screen and (min-resolution: 2dppx) {
     background-position: center center;
     background-repeat: no-repeat;
     content: "";
+}
+
+.white-type {
+    color: #fff;
+}
+
+.order-link-footer {
+    width: 180px;
+    padding: 10px;
+    background-color: #00BAFC;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s ease;
+    font-size: 1rem;
+}
+
+.order-link-footer:hover {
+    opacity: 0.8;
+}
+
+.order-link-footer:active {
+    opacity: 0.6;
+}
+
+.order-section {
+    padding: 50px 0;
+    background-color: #00BAFC;
+    margin-top: 55px;
+    color: #fff;
+}
+
+.order-form {
+    background-color: #fff;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.form-inputs input, select {
+    outline: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 16px;
+    width: 300px;
+    height: 55px;
+    border: none;
+    background-color: #F3F3F3;
+    padding: 16px;
+    border-radius: 5px;
+    transition: box-shadow 300ms ease;
+}
+
+.form-inputs input:focus, select:focus {
+    box-shadow: 0 0 2px 2px #00BAFC;
+}
+
+/* foooter */
+
+.site-footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 56px 0;
+}
+
+.footer-heading {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.footer-list {
+    display: flex;
+    align-items: start;
+    list-style-type: none;
+}
+
+.footer-list li {
+    margin-right: 100px;
+    list-style-type: none;
+}
+
+.footer-list li ul {
+    padding-inline-start: 0;
+}
+.footer-list li ul li {
+    margin: 8px;
+}
+.copyright {
+    width: 320px;
+}
+
+.copyright-description {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.nav-footer {
+    width: 180px;
+    padding-inline-start: 0;
+}
+
+.footer-navlist a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-navlist a:hover {
+    color: #00BAFC;
+}
+
+.footer-navlist a:active {
+    opacity: 0.6;
+}
+
+.social-network-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-network-links svg {
+    margin-right: 8px;
+}
+
+.social-network-links:hover {
+    color: #00BAFC;
+}
+
+.social-network-links:active {
+    opacity: 0.6;
 }
