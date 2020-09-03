@@ -60,6 +60,7 @@ body {
 .site-header {
     top: 0;
     position: fixed;
+    z-index: 50;
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -643,4 +644,112 @@ only screen and (min-resolution: 2dppx) {
 
 .social-network-links:active {
     opacity: 0.6;
+}
+
+.site-services {
+    padding-top: 72px;
+}
+
+.site-services-heading, .site-services-text {
+    text-align: center;
+}
+
+.site-services-text {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===========Sercices============= */
+
+.inner-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-services-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-services-list  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+.services-property > li::before {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #00bafc;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.site-services-item:first-child {
+    margin-top: 80px;
+}
+
+.site-services-item h3 {
+    margin: 0;
+}
+
+.site-services-item {
+    background-color: #fff;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+    padding: 32px;
+    margin: 32px 0;
+}
+
+.mini-link-wrapper {
+    margin-top: 16px;
+    justify-content: start;
+}
+
+.site-services-item > div {
+    width: 500px;
+    margin-left: auto;
+}
+
+.site-services-item > div {
+    position: relative;
+}
+
+.site-services-item > div::before {
+    position: absolute;
+    z-index: 1;
+    left: -50%;
+    top: 0;
+    display: inline-block;
+    content: '';
+    width: 200px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.create-website > div::before {
+    background-image: url('../img/website-illustration.png');
+}
+
+.telegram-bot-create > div::before {
+    background-image: url('../img/bot-illustration.png');
+}
+
+.social-media-marketing > div::before {
+    background-image: url('../img/smm-illustration.png');
+}
+
+.graphic-design > div::before {
+    background-image: url('../img/design-illustration.png');
+}
+
+.crm-services > div::before {
+    background-image: url('../img/crm-illustration.png');
 }
